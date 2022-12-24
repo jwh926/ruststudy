@@ -1,18 +1,16 @@
 use std::io;
 
 fn main() {
-	let mut temp = String::new();
-	io::stdin().read_line(&mut temp).unwrap();
-	let mut temp = temp.trim().split_whitespace();
-	let temperature:f64 = temp.next().unwrap().parse().unwrap();
-	let method = temp.next().unwrap();
-	if method == "F" {
-		println!("{} C", (temperature-32.0)/1.8);
+	let mut n = String::new();
+	io::stdin().read_line(&mut n).unwrap();
+	let n:i32 = n.trim().parse().unwrap();
+	let mut f = 1;
+	let mut f1 = 1;
+	let mut f2 = 0;
+	for _ in 1..n {
+		f = f1 + f2;
+		f2 = f1;
+		f1 = f;
 	}
-	else if method == "C" {
-		println!("{} F", (temperature*1.8)+32.0);
-	}
-	else {
-		println!("method is wrong: F or C");
-	}
+	println!("{}", f);
 }
