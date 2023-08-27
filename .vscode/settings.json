@@ -7,6 +7,10 @@
 		".\\Cargo.toml",
 		".\\Cargo.toml",
 		".\\c1\\Cargo.toml",
-		".\\c1\\Cargo.toml"
-	]
+		".\\c1\\Cargo.toml",
+		".\\c2\\Cargo.toml",
+		".\\c2\\Cargo.toml"
+	],
+	"rust-analyzer.showUnlinkedFileNotification": false,
+	"svn.ignoreMissingSvnWarning": true
 }

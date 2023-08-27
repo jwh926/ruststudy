@@ -1,8 +1,9 @@
 fn is_prime(n: usize) -> bool {
 	for i in 2..n {
-		if n % i == 0 {
-			return false;
-		}
+		let test = if n % i == 0 {
+			false
+		} else {true};
+		println!("{}", test);
 	}
 	true
 }
