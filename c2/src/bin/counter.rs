@@ -9,7 +9,7 @@ fn main() {
     c_map.insert("c", 0);
 
     for w in V_DATA.split(',') {
-        c_map.insert(w, c_map[w]+1);
+        c_map.insert(w, c_map[w] + 1);
     }
 
     for k in ["a", "b", "c"] {

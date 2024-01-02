@@ -6,7 +6,7 @@ fn caesar_cipher(text: &str, shift: i16) -> String {
     for ch in text.chars() {
         let mut code = ch as i16;
         if code_a <= code && code <= code_z {
-            code = (code - code_a+shift+26) % 26 + code_a;
+            code = (code - code_a + shift + 26) % 26 + code_a;
         }
 
         result.push((code as u8) as char)
